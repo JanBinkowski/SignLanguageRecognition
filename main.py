@@ -42,12 +42,13 @@ def main():
             image, results = mediapipeDetection(frame, holistic)
             drawLandmarks(image, results)
 
-            cv2.imshow("window", cv2.flip(image, 1))
+            cv2.imshow("window", image)
             out = cv2.VideoWriter(
                 os.path.join(DATA_PATH_VIDEO, classDirName, str(seq_counter), "{}.mp4".format(seq_counter)),
                 cv2.VideoWriter_fourcc(*'mp4v'), 15.0,
                 (frame_width, frame_height))
             k = cv2.waitKey(1)
+
             if k % 256 == 27:
                 # ESC pressed
                 print("\nEscape hit, closing...")
@@ -60,9 +61,12 @@ def main():
                     ret, frame = cap.read()
                     image, results = mediapipeDetection(frame, holistic)
                     drawLandmarks(image, results)
+                    cv2.putText(image, 'Class Name: {}. Video Number: {}'.format(classDirName, seq_counter+1),
+                                (15, 12),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
+                    out.write(image)
 
-                    out.write(cv2.flip(image, 1))
-                    cv2.imshow("window", cv2.flip(image, 1))
+                    cv2.imshow("window", image)
                     keypoints = extractKeypoints(results)
 
 
