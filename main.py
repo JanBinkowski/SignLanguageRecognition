@@ -22,8 +22,7 @@ def createNewClassDir(className):
         except:
             pass
 
-
-def main():
+def createDataSet():
     classDirName = input('\nClass name: ')
     print('\nOpenCV is starting...')
     createNewClassDir(classDirName)
@@ -33,15 +32,14 @@ def main():
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
 
-
     with mpHolistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
-
-
         while cap.isOpened():
             ret, frame = cap.read()
             image, results = mediapipeDetection(frame, holistic)
             drawLandmarks(image, results)
-
+            cv2.putText(image, 'Tap a spacebar to start recording.',
+                        (50, 200),
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 4, cv2.LINE_AA)
             cv2.imshow("window", image)
             out = cv2.VideoWriter(
                 os.path.join(DATA_PATH_VIDEO, classDirName, str(seq_counter), "{}.mp4".format(seq_counter)),
@@ -57,13 +55,12 @@ def main():
                 # SPACE pressed
                 start=time.time()
                 for frame_num in range(sequence_length):
-
                     ret, frame = cap.read()
                     image, results = mediapipeDetection(frame, holistic)
                     drawLandmarks(image, results)
                     cv2.putText(image, 'Class Name: {}. Video Number: {}'.format(classDirName, seq_counter+1),
                                 (15, 12),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
                     out.write(image)
 
                     cv2.imshow("window", image)
@@ -91,6 +88,9 @@ def main():
         cap.release()
         cv2.destroyAllWindows()
 
+
+def main():
+    createDataSet()
 
 
 if __name__ == "__main__":
