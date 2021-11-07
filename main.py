@@ -22,13 +22,12 @@ def createNewClassDir(className):
         except:
             pass
 
-def createDataSet():
+def createDataset():
     classDirName = input('\nClass name: ')
     print('\nOpenCV is starting...')
     createNewClassDir(classDirName)
     cap = cv2.VideoCapture(0)
     seq_counter = 0
-    img_counter = 0
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
 
@@ -90,7 +89,7 @@ def createDataSet():
 
 
 def main():
-    createDataSet()
+    createDataset()
 
 
 if __name__ == "__main__":
