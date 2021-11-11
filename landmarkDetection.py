@@ -1,7 +1,20 @@
 import cv2
 import numpy as np
 import mediapipe as mp
+import cv2.cv2
+import time
+import os
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense
 
+# DATA_PATH = os.path.join('C://Users//JanBinkowski//Desktop//MP_Data_ON_DESKTOP')
+# DATA_PATH_VIDEO = os.path.join('C://Users//JanBinkowski//Desktop//MP_VIDEOS')
+DATA_PATH = os.path.join('MP_DATA')
+DATA_PATH_VIDEO = os.path.join('MP_VIDEOS')
+actions = np.array(['a', 'b', 'c'])
+no_sequences = 100
+sequence_length = 30
 
 mpHolistic = mp.solutions.holistic
 mpDrawing = mp.solutions.drawing_utils
