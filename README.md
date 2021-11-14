@@ -50,7 +50,7 @@ pip install SignLanguageRecognition
  pip install SignLanguageRecognition==0.0.17
  ```
 
-**Note.** When you are installing this library, the following are also installed: ```opencv-python```,```mediapipe```,```numpy```.
+**Note.** When you are installing this library, the following are also installed as required: ```opencv-python```,```mediapipe```,```numpy``` and ```tensorflow```.
  
 More details about installing and running python packages here: [Installing Packages (python.org)](https://packaging.python.org/tutorials/installing-packages/).
 
