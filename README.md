@@ -3,6 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [How it was made](#how-it-was-made) 
 * [Setup](#setup)
 * [Getting started](#getting-started)
 * [License](#license)
@@ -24,6 +25,24 @@ Project is created with:
 * **NumPy**: 1.19.5
 
 ---	
+
+## How it woas made
+### Creating a dataset and model training
+The entire dataset used to model training was created by me from scratch. Gathering the data 
+was made by using opensource libraries: OpenCV and Mediapipe. Dataset is collection of 100 thirty-frame sequences for each class
+and every frame is saved as Numpy array which came as the output of the mediapipe library.
+
+Proccess of collecting data is demonstrated right below:
+
+| class: a            |  class: b |  class: c |
+:-------------------------:|:-------------------------:|:-------------------------:
+![a_gif.gif](FILES_FOR_README/a_gif.gif) |  ![b_gif.gif](FILES_FOR_README/b_gif.gif) | ![c_gif.gif](FILES_FOR_README/c_gif.gif)
+
+To train the model, the TensorFlow library was used with LSTM layers. The whole training
+process is available [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/SignLanguageRecognition.ipynb).
+
+
+---
 
 ## Setup 
 All package details you can find here: [pypi.org/SignLanguageRecognition](https://pypi.org/project/SignLanguageRecognition/).
