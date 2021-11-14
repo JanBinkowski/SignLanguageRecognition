@@ -1,4 +1,4 @@
-from landmarkDetection import *
+from SignLanguageRecognitionLearning.landmarkDetection import *
 
 def createNewClassDir(className):
     for sequence in range(no_sequences):

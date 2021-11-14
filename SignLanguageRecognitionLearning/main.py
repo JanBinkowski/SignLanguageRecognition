@@ -1,5 +1,5 @@
-from createDataset import *
-from signLanguageRecgnizer import *
+from SignLanguageRecognitionLearning.createDataset import *
+from SignLanguageRecognitionLearning.signLanguageRecognizer import *
 
 def handleActionInMain():
     while(True):

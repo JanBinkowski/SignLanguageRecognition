@@ -10,8 +10,8 @@ from tensorflow.keras.layers import LSTM, Dense
 
 # DATA_PATH = os.path.join('C://Users//JanBinkowski//Desktop//MP_Data_ON_DESKTOP')
 # DATA_PATH_VIDEO = os.path.join('C://Users//JanBinkowski//Desktop//MP_VIDEOS')
-DATA_PATH = os.path.join('MP_DATA')
-DATA_PATH_VIDEO = os.path.join('MP_VIDEOS')
+DATA_PATH = os.path.join('../MP_DATA')
+DATA_PATH_VIDEO = os.path.join('../MP_VIDEOS')
 actions = np.array(['a', 'b', 'c'])
 no_sequences = 100
 sequence_length = 30

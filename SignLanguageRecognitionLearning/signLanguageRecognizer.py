@@ -1,4 +1,4 @@
-from landmarkDetection import *
+from SignLanguageRecognitionLearning.landmarkDetection import *
 
 def signLanguageRecognizer():
     model = Sequential()
@@ -24,7 +24,7 @@ def signLanguageRecognizer():
             #     print(results.left_hand_landmarks.landmark[1])
             # print(results.left_hand_landmarks)
 
-            drawLandmarks(image, results)
+            # drawLandmarks(image, results)
             keypoints = extractKeypoints(results)
 
             sequence.append(keypoints)
@@ -42,15 +42,19 @@ def signLanguageRecognizer():
                         else:
                             sentence.append(actions[np.argmax(res)])
                             # print(sentence)
-                        print(actions[np.argmax(res)], ' <===> Probability: {}%'.format((max(res) * 100).astype(float)))
+                        # print(actions[np.argmax(res)], ' <===> Probability: {}%'.format((max(res) * 100).astype(float)))
+                        cv2.putText(image, actions[np.argmax(res)]+' : '+str((max(res) * 100).astype(float))+' %',
+                                    (15, 25),
+                                    cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 1, cv2.LINE_AA)
                     # clearConsole()
 
             cv2.imshow("window", image)
-
-            if cv2.waitKey(1) % 256 == 27:
+            k = cv2.waitKey(1)
+            if k % 256 == 27:
                 # ESC pressed
                 print("\nEscape hit, closing...")
                 break
 
         cap.release()
         cv2.destroyAllWindows()
+
