@@ -10,20 +10,23 @@
 
 ## General info
 SignLanguageRecognition package is a opensource tool to estimate sign language from camera vision. This project is a part of   my Bachelor Thesis and contains the implementation of sign language recognition tool using a LSTM Neural Network, TensorFlow Keras and other opensorce libraries like: OpenCV or MediaPipe.
+Here is a link leading to PyPi package repository: [pypi.org/SignLanguageRecognition](https://pypi.org/project/SignLanguageRecognition/).
 	
 ---	
 	
 ## Technologies
 Project is created with:
-* Python: 3.8.8
-* OpenCV-Python: 4.5.3.56
-* TensorFlow: 2.4.1
-* MediaPipe: 0.8.7.3
-* NumPy: 1.19.5
+* **Python**: 3.8.8
+* **OpenCV-Python**: 4.5.3.56
+* **TensorFlow**: 2.4.1
+* **MediaPipe**: 0.8.7.3
+* **NumPy**: 1.19.5
 
 ---	
 
 ## Setup 
+All package details you can find here: [pypi.org/SignLanguageRecognition](https://pypi.org/project/SignLanguageRecognition/).
+The Python Package Index (PyPI) is a repository of software for the Python programming language.
 Make sure that you have installed ```python``` (>=3.6) and you can run ```python``` from the command line. Check it by running:
 ```
 python --version
@@ -46,7 +49,7 @@ pip install SignLanguageRecognition
  pip install SignLanguageRecognition==0.0.17
  ```
 
-When you are installing this library, the following are also installed: ```opencv-python```,```mediapipe```,```numpy```.
+**Note.** When you are installing this library, the following are also installed: ```opencv-python```,```mediapipe```,```numpy```.
  
 More details about installing and running python packages here: [Installing Packages (python.org)](https://packaging.python.org/tutorials/installing-packages/).
 
