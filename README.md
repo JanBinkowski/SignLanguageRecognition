@@ -26,7 +26,7 @@ Project is created with:
 
 ---	
 
-## How it woas made
+## How it was made
 ### Creating a dataset and model training
 The entire dataset used to model training was created by me from scratch. Gathering the data 
 was made by using opensource libraries: OpenCV and Mediapipe. Dataset is collection of 100 thirty-frame sequences for each class
