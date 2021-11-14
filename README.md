@@ -63,7 +63,7 @@ python
 ```
 After that, the Python intrpreter will be opened. Then import a method from previously installed package:
 ```python
->> from SignLanguageRecognition import signLanguageRecognizer
+>>from SignLanguageRecognition import signLanguageRecognizer
 >> signLanguageRecognizer.signLanguageRecognizerMethod()
 ```
 This code will cause opening a new OpenCV window with ready-to-work tool.

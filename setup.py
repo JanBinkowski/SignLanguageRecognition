@@ -6,11 +6,11 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 from pathlib import Path
 this_directory = Path(__file__).parent
-long_description = (this_directory / "README.md").read_text()
+long_description = open(os.path.join(here,'README.md'), encoding="utf8").read()
 
 
 
-VERSION = '0.0.19.1'
+VERSION = '0.0.19.2'
 DESCRIPTION = 'Sign Language Recognition tool.'
 LONG_DESCRIPTION = 'Sign Language Recognition tool. It works in real time using additionally OpenCV and Mediapipe libraries.'
 
