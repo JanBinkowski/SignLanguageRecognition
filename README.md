@@ -5,6 +5,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Getting started](#getting-started)
+* [License](#license)
 
 ---
 
