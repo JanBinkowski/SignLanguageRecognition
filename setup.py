@@ -2,7 +2,15 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.18'
+here = os.path.abspath(os.path.dirname(__file__))
+
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+
+
+VERSION = '0.0.19.1'
 DESCRIPTION = 'Sign Language Recognition tool.'
 LONG_DESCRIPTION = 'Sign Language Recognition tool. It works in real time using additionally OpenCV and Mediapipe libraries.'
 
@@ -13,7 +21,7 @@ setup(
     author="Jan Binkowski",
     author_email="<jan.binkowski@wp.pl>",
     description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/JanBinkowski/SignLanguageRecognition",
     project_urls={

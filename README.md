@@ -1,10 +1,17 @@
+# Sign Language Recognition tool
+[![GitHub License](https://img.shields.io/github/license/JanBinkowski/SignLanguageRecognition?style=plastic)](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/LICENSE)  [![GitHub Stars](https://img.shields.io/github/stars/JanBinkowski/SignLanguageRecognition?style=plastic)](https://github.com/JanBinkowski/SignLanguageRecognition/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/JanBinkowski/SignLanguageRecognition?style=plastic)](https://github.com/JanBinkowski/SignLanguageRecognition/issues)
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Getting started](#getting-started)
+
+---
 
 ## General info
-SignLanguageRecognition package is a opensource tool to estimate sign language from camera vision. This project is a implementation of sign language recognition using a LSTM Neural Network, TensorFlow Keras and other opensorce libraries like: OpenCV or MediaPipe.
+SignLanguageRecognition package is a opensource tool to estimate sign language from camera vision. This project is a part of   my Bachelor Thesis and contains the implementation of sign language recognition tool using a LSTM Neural Network, TensorFlow Keras and other opensorce libraries like: OpenCV or MediaPipe.
+	
+---	
 	
 ## Technologies
 Project is created with:
@@ -13,13 +20,20 @@ Project is created with:
 * TensorFlow: 2.4.1
 * MediaPipe: 0.8.7.3
 * NumPy: 1.19.5
-	
-## Setup and getting started
+
+---	
+
+## Setup 
 Make sure that you have installed ```python``` (>=3.6) and you can run ```python``` from the command line. Check it by running:
 ```
 python --version
 ```
-Make sure you can run ```pip``` from the command line and ensure that ```pip``` version is up-to-date, using command:
+Now you need to use a ```pip``` to conduct installation process. ```pip``` is a package management system used to install and manage software packages/libraries written in Python. These files are stored in a large “on-line repository” termed as Python Package Index (PyPI).  
+To check if ```pip``` is already installed on your system, just go to the command line and execute the following command:
+```
+pip -V
+```
+After you make sure you can run ```pip``` from the command line you should ensure that ```pip``` version is up-to-date. To check this use command below:
 ```
 pip install --upgrade pip
 ```
@@ -35,3 +49,26 @@ pip install SignLanguageRecognition
 When you are installing this library, the following are also installed: ```opencv-python```,```mediapipe```,```numpy```.
  
 More details about installing and running python packages here: [Installing Packages (python.org)](https://packaging.python.org/tutorials/installing-packages/).
+
+---
+
+## Getting started
+This section shows example how to use SignLanguageRecognition library.
+First of all you have to open Python interpreter on your device. An example way to do this is by typing a command:
+```
+python
+```
+After that, the Python intrpreter will be opened. Then import a method from previously installed package:
+```python
+>> from SignLanguageRecognition import signLanguageRecognizer
+>> signLanguageRecognizer.signLanguageRecognizerMethod()
+```
+This code will cause opening a new OpenCV window with ready-to-work tool.
+Enjoy testing!
+
+---
+
+## License
+>You can check out the full license [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/LICENSE)
+
+This project is licensed under the terms of the **MIT** license.
