@@ -42,7 +42,7 @@ To train the model, the TensorFlow library was used with LSTM layers. The whole 
 process is available [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/SignLanguageRecognition.ipynb).
 
 You can find the dataset used to trainig and also videos documenting all process of clooecting data,
-under links: [Dataset](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/MP_DATA), [Videos](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/MP_VIDEOS).
+under links: [Dataset](https://drive.google.com/file/d/1ipnue2P9MREYFcN-F5y8EEaW36cJl9MF/view?usp=sharing), [Videos](https://drive.google.com/file/d/1SeL21DYmnRUorSeyijdz6ZX5SyhNTqID/view?usp=sharing).
 
 ---
 
