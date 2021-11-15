@@ -41,6 +41,8 @@ Proccess of collecting data is demonstrated right below:
 To train the model, the TensorFlow library was used with LSTM layers. The whole training
 process is available [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/SignLanguageRecognition.ipynb).
 
+You can find the dataset used to trainig and also videos documenting all process of clooecting data,
+under links: [Dataset](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/MP_DATA), [Videos](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/MP_VIDEOS).
 
 ---
 
