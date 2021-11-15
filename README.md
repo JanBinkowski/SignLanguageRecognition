@@ -36,7 +36,7 @@ Proccess of collecting data is demonstrated right below:
 
 | class: a            |  class: b |  class: c |
 :-------------------------:|:-------------------------:|:-------------------------:
-![a_gif.gif](FILES_FOR_README/a_gif.gif) |  ![b_gif.gif](FILES_FOR_README/b_gif.gif) | ![c_gif.gif](FILES_FOR_README/c_gif.gif)
+![a_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/a_gif.gif?raw=true) |  ![b_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/b_gif.gif?raw=true) | ![c_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/c_gif.gif?raw=true)
 
 To train the model, the TensorFlow library was used with LSTM layers. The whole training
 process is available [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/SignLanguageRecognition.ipynb).
