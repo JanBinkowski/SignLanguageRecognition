@@ -34,6 +34,7 @@ and every frame is saved as Numpy array which came as the output of the mediapip
 
 Proccess of collecting data is demonstrated right below:
 
+
 | class: a            |  class: b |  class: c |
 :-------------------------:|:-------------------------:|:-------------------------:
 ![a_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/a_gif.gif?raw=true) |  ![b_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/b_gif.gif?raw=true) | ![c_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/c_gif.gif?raw=true)
