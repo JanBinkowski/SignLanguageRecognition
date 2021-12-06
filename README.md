@@ -38,6 +38,34 @@ Proccess of collecting data is demonstrated right below:
 :-------------------------:|:-------------------------:|:-------------------------:
 ![a_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/a_gif.gif?raw=true) |  ![b_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/b_gif.gif?raw=true) | ![c_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/c_gif.gif?raw=true)
 
+| class: d            |  class: e |  class: f |
+:-------------------------:|:-------------------------:|:-------------------------:
+![d_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/d_gif.gif?raw=true) |  ![e_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/e_gif.gif?raw=true) | ![f_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/f_gif.gif?raw=true)
+
+| class: g            |  class: h |  class: i |
+:-------------------------:|:-------------------------:|:-------------------------:
+![g_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/g_gif.gif?raw=true) |  ![h_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/h_gif.gif?raw=true) | ![i_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/i_gif.gif?raw=true)
+
+| class: j            |  class: k |  class: l |
+:-------------------------:|:-------------------------:|:-------------------------:
+![j_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/j_gif.gif?raw=true) |  ![k_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/k_gif.gif?raw=true) | ![l_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/l_gif.gif?raw=true)
+
+| class: m            |  class: n |  class: o |
+:-------------------------:|:-------------------------:|:-------------------------:
+![m_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/m_gif.gif?raw=true) |  ![n_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/n_gif.gif?raw=true) | ![o_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/o_gif.gif?raw=true)
+
+| class: p            |  class: r |  class: s |
+:-------------------------:|:-------------------------:|:-------------------------:
+![o_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/p_gif.gif?raw=true) |  ![r_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/r_gif.gif?raw=true) | ![s_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/s_gif.gif?raw=true)
+
+| class: t            |  class: u |  class: w |
+:-------------------------:|:-------------------------:|:-------------------------:
+![t_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/t_gif.gif?raw=true) |  ![u_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/u_gif.gif?raw=true) | ![w_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/w_gif.gif?raw=true)
+
+| class: y            |  class: z | |
+:-------------------------:|:-------------------------:|:-------------------------:
+![y_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/y_gif.gif?raw=true) |  ![z_gif.gif](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/FILES_FOR_README/z_gif.gif?raw=true) | |
+
 To train the model, the TensorFlow library was used with LSTM layers. The whole training
 process is available [here](https://github.com/JanBinkowski/SignLanguageRecognition/blob/master/SignLanguageRecognitionLearning/SignLanguageRecognition.ipynb).
 

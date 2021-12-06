@@ -8,7 +8,8 @@ def signLanguageRecognizer():
     model.add(Dense(64, activation='relu'))
     model.add(Dense(32, activation='relu'))
     model.add(Dense(actions.shape[0], activation='softmax'))
-    model.load_weights('C://Users//JanBinkowski//Desktop//SignLanguageRecognition//Weights//action.h5')
+    # model.load_weights('C://Users//JanBinkowski//Desktop//SignLanguageRecognition//Weights//action.h5')
+    model.load_weights('C://Users//JanBinkowski//Downloads//2021.12.06-18.07-batch_128//Weights//2021.12.06-18.32//action.h5')
     sequence = []
     sentence = []
     predictions = []

@@ -10,7 +10,7 @@ long_description = open(os.path.join(here,'README.md'), encoding="utf8").read()
 
 
 
-VERSION = '0.0.19.3'
+VERSION = '0.0.19.4'
 DESCRIPTION = 'Sign Language Recognition tool.'
 LONG_DESCRIPTION = 'Sign Language Recognition tool. It works in real time using additionally OpenCV and Mediapipe libraries.'
 
