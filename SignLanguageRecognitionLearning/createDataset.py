@@ -1,7 +1,7 @@
 from SignLanguageRecognitionLearning.landmarkDetection import *
 
 def createNewClassDir(className):
-    for sequence in range(no_sequences):
+    for sequence in range(number_of_sequences):
         try:
             os.makedirs(os.path.join(DATA_PATH, className, str(sequence)))
             os.makedirs(os.path.join(DATA_PATH_VIDEO, className, str(sequence)))
@@ -39,7 +39,7 @@ def createDataset():
             elif k % 256 == 32:
                 # SPACE pressed
                 start=time.time()
-                for frame_num in range(sequence_length):
+                for frame_num in range(every_sequence_length):
                     ret, frame = cap.read()
                     image, results = mediapipeDetection(frame, holistic)
                     drawLandmarks(image, results)
@@ -57,9 +57,9 @@ def createDataset():
 
                     print("{}".format(npy_path))
                     # print(keypoints)
-                    if(frame_num == sequence_length-1):
+                    if(frame_num == every_sequence_length-1):
                         seq_counter += 1
-                    if (seq_counter == no_sequences):
+                    if (seq_counter == number_of_sequences):
                         break
                     cv2.waitKey(1)
 

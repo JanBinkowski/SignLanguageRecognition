@@ -7,6 +7,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import pkg_resources
+from SignLanguageRecognitionLearning.landmarkDetection import *
 
 # DATA_PATH = os.path.join('C://Users//JanBinkowski//Desktop//MP_Data_ON_DESKTOP')
 # DATA_PATH_VIDEO = os.path.join('C://Users//JanBinkowski//Desktop//MP_VIDEOS')
@@ -66,7 +67,6 @@ def signLanguageRecognizerMethod():
     predictions = []
     threshold = 0.2
     cap = cv2.VideoCapture(0)
-    # Set mediapipe model
     with mpHolistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
         while cap.isOpened():
             ret, frame = cap.read()
@@ -93,12 +93,10 @@ def signLanguageRecognizerMethod():
                                 sentence.append(actions[np.argmax(res)])
                         else:
                             sentence.append(actions[np.argmax(res)])
-                            # print(sentence)
-                        # print(actions[np.argmax(res)], ' <===> Probability: {}%'.format((max(res) * 100).astype(float)))
+
                         cv2.putText(image, actions[np.argmax(res)]+' : '+str((max(res) * 100).astype(float))+' %',
                                     (15, 25),
                                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 1, cv2.LINE_AA)
-                    # clearConsole()
 
             cv2.imshow("window", image)
             k = cv2.waitKey(1)
@@ -109,4 +107,5 @@ def signLanguageRecognizerMethod():
 
         cap.release()
         cv2.destroyAllWindows()
+
 
