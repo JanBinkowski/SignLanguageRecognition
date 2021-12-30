@@ -7,13 +7,10 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import pkg_resources
-from SignLanguageRecognitionLearning.landmarkDetection import *
 
-# DATA_PATH = os.path.join('C://Users//JanBinkowski//Desktop//MP_Data_ON_DESKTOP')
-# DATA_PATH_VIDEO = os.path.join('C://Users//JanBinkowski//Desktop//MP_VIDEOS')
 DATA_PATH = os.path.join('../MP_DATA')
 DATA_PATH_VIDEO = os.path.join('../MP_VIDEOS')
-actions = np.array(['a', 'b', 'c'])
+actions = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'y', 'z'])
 no_sequences = 100
 sequence_length = 30
 
