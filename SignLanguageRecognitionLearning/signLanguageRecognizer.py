@@ -23,11 +23,6 @@ def signLanguageRecognizer():
             ret, frame = cap.read()
             image, results = mediapipeDetection(frame, holistic)
 
-            # if(results.left_hand_landmarks):
-            #     print(results.left_hand_landmarks.landmark[1])
-            # print(results.left_hand_landmarks)
-
-            # drawLandmarks(image, results)
             keypoints = extractKeypoints(results)
 
             sequence.append(keypoints)
@@ -71,7 +66,6 @@ def signLanguageRecognizer_2():
     model.add(Dense(64, activation='relu'))
     model.add(Dense(32, activation='relu'))
     model.add(Dense(actions.shape[0], activation='softmax'))
-    # model.load_weights('action.h5')
     model.load_weights('C://Users//JanBinkowski//Desktop//najlepsze_treningi_sieci//2021.12.07-20.12-batch_128_ale_1000epok_inna_proporcja_danych//Weights//2021.12.07-21.16//action.h5')
     sequence = []
     sentence = []
@@ -79,7 +73,6 @@ def signLanguageRecognizer_2():
     threshold = 0.2
     string = ''
     cap = cv2.VideoCapture(0)
-    # Set mediapipe model
     with mpHolistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
         while cap.isOpened():
             ret, frame = cap.read()
@@ -145,9 +138,6 @@ def signLanguageRecognizer_2():
 
                 stop = time.time()
                 print("\nRecognizing ended. Time: {}\n".format(stop - start))
-
-            # if (cv2.getWindowProperty("window", cv2.WND_PROP_VISIBLE) < 1) or (cv2.waitKey(1) & 0xFF == 27):
-            #     break
 
         cap.release()
         cv2.destroyAllWindows()

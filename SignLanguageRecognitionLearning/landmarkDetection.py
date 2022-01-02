@@ -10,7 +10,6 @@ from tensorflow.keras.layers import LSTM, Dense
 
 DATA_PATH = os.path.join('../MP_DATA')
 DATA_PATH_VIDEO = os.path.join('../MP_VIDEOS')
-# actions = np.array(['a', 'b', 'c'])
 actions = np.array(open('C://Users//JanBinkowski//Desktop//SignLanguageRecognition//classes.txt', 'r').read().split('\n'))
 number_of_sequences = 100
 every_sequence_length = 30
@@ -28,25 +27,15 @@ def mediapipeDetection(image_param, model):
 
 
 def drawLandmarks(image, results):
-    # mpDrawing.draw_landmarks(image, results.face_landmarks, mpHolistic.FACEMESH_CONTOURS,
-    #                          mpDrawing.DrawingSpec(color=(80, 110, 10), thickness=1, circle_radius=1),
-    #                          mpDrawing.DrawingSpec(color=(80, 256, 121), thickness=1, circle_radius=1))
     mpDrawing.draw_landmarks(image, results.left_hand_landmarks, mpHolistic.HAND_CONNECTIONS,
-                             mpDrawing.DrawingSpec(color=(80, 22, 10), thickness=2, circle_radius=4),
-                             mpDrawing.DrawingSpec(color=(80, 44, 121), thickness=2, circle_radius=2))
+                             mpDrawing.DrawingSpec(color=(81, 23, 11), thickness=2, circle_radius=4),
+                             mpDrawing.DrawingSpec(color=(81, 45, 122), thickness=2, circle_radius=2))
     mpDrawing.draw_landmarks(image, results.right_hand_landmarks, mpHolistic.HAND_CONNECTIONS,
-                             mpDrawing.DrawingSpec(color=(121, 22, 76), thickness=2, circle_radius=4),
-                             mpDrawing.DrawingSpec(color=(121, 44, 250), thickness=2, circle_radius=2))
-    # mpDrawing.draw_landmarks(image, results.pose_landmarks, mpHolistic.POSE_CONNECTIONS,
-    #                          mpDrawing.DrawingSpec(color=(245, 117, 66), thickness=2, circle_radius=4),
-    #                          mpDrawing.DrawingSpec(color=(245, 66, 230), thickness=2, circle_radius=2))
+                             mpDrawing.DrawingSpec(color=(122, 23, 77), thickness=2, circle_radius=4),
+                             mpDrawing.DrawingSpec(color=(122, 45, 249), thickness=2, circle_radius=2))
 
 def extractKeypoints(results):
-    # pose = np.array([[res.x, res.y, res.z, res.visibility] for res in results.pose_landmarks.landmark]).flatten() if results.pose_landmarks else np.zeros(33*4)
-    # face = np.array([[res.x, res.y, res.z] for res in results.face_landmarks.landmark]).flatten() if results.face_landmarks else np.zeros(468*3)
     lh = np.array([[res.x, res.y, res.z] for res in results.left_hand_landmarks.landmark]).flatten() if results.left_hand_landmarks else np.zeros(21*3)
     rh = np.array([[res.x, res.y, res.z] for res in results.right_hand_landmarks.landmark]).flatten() if results.right_hand_landmarks else np.zeros(21*3)
-    # print(np.concatenate([lh, rh]))
-    # return np.concatenate([pose, face, lh, rh])
     return np.concatenate([lh, rh])
 
